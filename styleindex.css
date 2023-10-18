@@ -1,0 +1,221 @@
+body{
+    background-color: rgb(0, 0, 0);
+    
+}
+*{
+    color: aliceblue;
+}
+.main img{
+   
+    display: flex;
+    height: 720px;
+    width: 100%;
+    opacity: 80%;
+    
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    z-index: 1;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+   
+
+}
+.bt1{
+    height: 35px;
+    width: 95px;
+    margin: 10px;
+    border-radius: 30px;
+    border: solid silver 4px;
+    font-size: large;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo1{
+    height:65px;
+    width: 65px;
+    display: flex;
+    justify-content: right;
+ 
+}
+.name{
+    height:65px;
+    width: 180px;
+    display: flex;
+    justify-content: right;
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+    
+}
+.name img{
+    height:65px;
+    width: 95px;
+}
+.search{
+    margin: 10px;
+}
+.search img{
+    filter: invert();
+}
+.search input{
+    height: 35px;
+    width: 250px;
+    border-radius: 30px;
+    text-align: center;
+    border: solid silver 4px;
+    font-size: 15px;
+}
+::placeholder{
+    color: black;
+    font-size: 20px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-self: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+   max-width: 100%;
+}
+.cards div{
+    margin: 20px;
+    transition: transform .3s;
+    transition: all .3s;
+    box-shadow: 0px 0px 10px 5px #727171;
+}
+.cards div:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 33px 4px rgb(0, 221, 255);
+    
+}
+.cards img{
+    height: 450px;
+    width: 250px;
+}
+
+.cards h3{
+    color: aliceblue;
+    text-align: center;
+    border: thick double #626363;
+}
+
+.contect_us{
+    height: 600px;
+    width: 100%;
+    background-color: #626363;
+}
+
+a{
+    text-decoration: none;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    background-color: #000000;
+}
+.footer div{
+    width: 25%;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 50px;
+}
+.footer li{
+    margin: 10px;
+    list-style: none;
+}
+.footer u{
+    color: #ff0000;
+}
+
+.button a{
+    text-decoration: none;
+}
+.bt1 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(255,27,0);
+  background: linear-gradient(0deg, rgb(199, 10, 10) 0%, rgb(252, 250, 250) 100%);
+  }
+  .bt1:hover {
+    color: #ff0000;
+    background: transparent;
+     box-shadow:none;
+  }
+  .bt1:before,
+  .bt1:after{
+    
+    background: #00fffc;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px rgb(255, 255, 255),
+     4px 4px 5px 0px rgb(252, 0, 0);
+    transition:400ms ease all;
+  }
+  .bt1:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .bt1:hover:before,
+  .bt1:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  .custom-btn {
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgb(0, 0, 0),
+     4px 4px 5px 0px rgb(255, 0, 0);
+    outline: none;
+  }
+  .map{
+    margin:auto
+  }
+  .img-tex{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+  .img-tex h1{
+    display: block;
+    align-items: center;
+    font-size: 80px;
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.oRnJdfpevdyzdeww-tFPCQHaEo&pid=Api&P=0&h=220);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+  }
+.img-tex h1{
+    margin:auto;
+    transition: transform 0.5s;
+    transition: all 1s ;
+}
+.img-tex h1:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 12px 12px #ff0000;
+    
+}
