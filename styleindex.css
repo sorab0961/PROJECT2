@@ -66,6 +66,8 @@ body{
 }
 .search img{
     filter: invert();
+    align-items: center;
+    justify-content: center;
 }
 .search input{
     height: 35px;
@@ -191,10 +193,11 @@ a{
   }
   .img-tex{
     height: 250px;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     
   }
   .img-tex h1{
