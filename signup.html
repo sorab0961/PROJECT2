@@ -12,8 +12,8 @@
 <body>
     <div class="nav">
         <div class="logo">
-            <a href="index.html"> <img class="logo1" src="logo.png" alt=""></a>
-            <img class="name"  src="name.png" alt="">
+            <a href="index.html"> <img class="logo1" src="img/logo.png" alt=""></a>
+            <img class="name"  src="img/name.png" alt="">
         </div>
         <!-- <div class="name"></div> -->
         <div class="search">
@@ -34,31 +34,49 @@
                 <form class="login">
                   <div class="login__field">
                     <i class="login__icon fas fa-user"></i>
-                    <input type="text" class="login__input" placeholder="Name ">
+                    <input id="Name" type="text" class="login__input" placeholder="Name">
                 </div>
                     <div class="login__field">
                         <i class="login__icon fas fa-user"></i>
-                        <input type="text" class="login__input" placeholder="Email">
+                        <input id="Email" type="text" class="login__input" placeholder="Email">
                     </div>
                     <div class="login__field">
                       <i class="login__icon fa-solid fa-calendar-days"></i>
                       <input type="date" class="login__input" placeholder="">
                   </div>
+                  
                
-                    <div class="login__field">
-                      <i class="login__icon fas fa-lock"></i>
-                      <input type="password" class="login__input" placeholder="create password">
-                  </div>
-                  <div class="login__field">
-                    <i class="login__icon fas fas fa-lock"></i>
-                    <input type="password" class="login__input" placeholder="confirm password">
+                    
+                <div class="login__field">
+                    <select name="" id="CITY">
+                        <option value="none">select your city</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Vadodra">Vadodra</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Surendranagar">Surendranagar</option>
+                        <option value="Mehsana">Mehsana</option>
+                        <option value="Abu">Abu</option>
+                        <option value="Goa">Goa</option>
+                    </select>
                 </div>
                 <div class="radio">
-                  <!-- <i class="login__icon fa-solid fa-calendar-days"></i> -->
-                  <input type="radio" class="login__input" placeholder=""><p><b>Male</b></p>
-                  <input type="radio" class="login__input" placeholder=""><p><b>Female</b></p>
+                  
+                  <input type="radio" class="login__input" id="Male" name="Gender" placeholder=""><p><b>Male</b></p>
+                  <input type="radio" class="login__input" id="Female" name="Gender" placeholder=""><p><b>Female</b></p>
 
               </div>
+              <div class="login__field">
+                <i class="login__icon fas fa-lock"></i>
+                <input id="password" type="password" class="login__input" placeholder="create password">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fas fa-lock"></i>
+              <input id="confirm_password" type="password" class="login__input" placeholder="confirm password">
+          </div>
+              <div class="login__field">
+                
+                <input type="checkbox">Agree all terms
+            </div>
                     
                     <button class="button login__submit">
                         <span class="button__text">Sign up Now</span>
