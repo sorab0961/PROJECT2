@@ -150,6 +150,7 @@ body{
 	outline: none;
 }
 
+
 .button__icon {
 	font-size: 24px;
 	margin-left: auto;
@@ -232,8 +233,32 @@ body{
     width: 180px;
     display: flex;
     justify-content: right;
-    filter: drop-shadow(16px 16px 20px red) invert(75%);
+    filter: drop-shadow(0px 0px 8px red) invert(75%);
+    animation:glow 3s alternate infinite ;
     
+}
+@keyframes glow{
+    0%{
+        filter: drop-shadow(0px 0px 8px rgb(0, 30, 255))invert();
+    }
+    20%{
+        filter: drop-shadow(0px 0px 8px rgb(179, 0, 255))invert() ;
+    }
+    40%{
+        filter: drop-shadow(0px 0px 8px rgb(255, 183, 0))invert() ;
+    }
+    60%{
+        filter: drop-shadow(0px 0px 8px rgb(255, 0, 162))invert() ;
+    }
+    80%{
+        filter: drop-shadow(0px 0px 8px rgb(255, 0, 0)) invert();
+    }
+    10%{
+        filter: drop-shadow(0px 0px 8px rgb(0, 255, 17))invert() ;
+    }
+    0%{
+        filter: drop-shadow(0px 0px 8px rgb(0, 221, 255))invert() ;
+    }
 }
 .name img{
     height:65px;
@@ -333,9 +358,32 @@ body{
 
 .radio{
     display: flex;
-    flex-direction: row;
-   
+    justify-content: flex-start;
+    
+       
+}
+.redio_btn{
+    margin-right: 20px;
 }
 .radio p{
 font-size: 18px;
+
+}
+
+
+select{
+    width: 195px;
+    height: 29px;
+    border: 2px ;
+    border-radius: 8px;
+}
+select:active,
+select:focus,
+select:hover {
+	border-color: 2px #ff0000;
+   
+    width: 195px;
+    height: 29px;
+    
+    border-radius: 8px;
 }
